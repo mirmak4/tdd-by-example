@@ -1,6 +1,6 @@
 package guru.springframework;
 
-public class Money {
+public class Money implements Expression {
 
     protected int amount;
     protected String currency;
@@ -43,5 +43,9 @@ public class Money {
 
     public Money times(int multiplier) {
         return new Money(this.amount * multiplier, this.currency);
+    }
+
+    public Expression add(Money addend) {
+        return new Money(this.amount + addend.getAmount(), this.currency);
     }
 }
