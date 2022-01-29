@@ -6,7 +6,7 @@ public class Frank extends Money {
         this.amount = amount;
     }
 
-    public Frank multiplyAmount(int multiplier) {
+    public Money multiplyAmount(int multiplier) {
         return new Frank(amount * multiplier);
     }
 }
