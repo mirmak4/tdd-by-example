@@ -10,8 +10,10 @@ public class MoneyTest {
     @Test
     public void testMultiplicationDolar() {
         Dolar five = new Dolar(5);
-        assertEquals(new Dolar(10), five.multiplyAmount(2));
-        assertEquals(new Dolar(15), five.multiplyAmount(3));
+        Dolar product = five.multiplyAmount(2);
+        assertEquals(new Dolar(10), product);
+        product = five.multiplyAmount(3);
+        assertEquals(new Dolar(15), product);
     }
 
     @Test
@@ -24,8 +26,10 @@ public class MoneyTest {
     @Test
     public void testMultiplicationFrank() {
         Frank five = new Frank(5);
-        assertEquals(new Frank(10), five.multiplyAmount(2));
-        assertEquals(new Frank(15), five.multiplyAmount(3));
+        Frank product = five.multiplyAmount(2);
+        assertEquals(new Frank(10), product);
+        product = five.multiplyAmount(3);
+        assertEquals(new Frank(15), product);
     }
 
     @Test
