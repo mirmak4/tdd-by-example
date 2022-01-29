@@ -4,15 +4,15 @@ public abstract class Money {
 
     protected int amount;
 
-    public static Money dolar(int amount) {
-        return new Dolar(amount);
+    public static Money dollar(int amount) {
+        return new Dollar(amount);
     }
 
-    public static Money frank(int amount) {
-        return new Frank(amount);
+    public static Money franc(int amount) {
+        return new Franc(amount);
     }
 
-    public abstract Money multiplyAmount(int multiplier);
+    public abstract Money times(int multiplier);
 
     public int getAmount() {
         return amount;
